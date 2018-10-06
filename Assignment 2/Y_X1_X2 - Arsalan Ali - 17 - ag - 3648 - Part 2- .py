@@ -117,7 +117,7 @@ R_square = MSS / TSS
 print("\nR_square = ", R_square)
 
 # Mean Square Error coming through.....clear the wayyyyy
-MSE = RSS / n - k
+MSE = RSS / (n - k)
 print("\nMeans Square Error : MSE = ", MSE)
 
 # Beta1's secret
