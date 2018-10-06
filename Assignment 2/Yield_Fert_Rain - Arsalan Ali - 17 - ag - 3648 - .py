@@ -111,7 +111,7 @@ print("\nSum of All Y-hat values = ", ΣY_hat)
 print("\nY = {} + {}X1 + {}X2".format(Beta0, Beta1, Beta2))
 
 # Here comes the big league
-TSS = np.sum((Yield - Y_hat) ** 2)
+TSS = np.sum((Yield - Y_bar) ** 2)
 MSS = np.sum((Y_hat - Y_bar) ** 2)
 RSS = np.sum((Yield - Y_hat) ** 2)
 
