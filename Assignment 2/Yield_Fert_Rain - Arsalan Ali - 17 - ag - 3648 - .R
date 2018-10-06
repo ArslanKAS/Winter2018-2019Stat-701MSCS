@@ -97,7 +97,7 @@ MLR<- function( X1, X2, Y )
 	Sum_Y_hat = sum(Beta0 + Beta1*Fertilizer + Beta2*Rainfall)
 
 	# Here comes the big league
-	TSS = sum((Yield - Y_hat)^2)
+	TSS = sum((Yield - mean.Y)^2)
 	MSS = sum((Y_hat - mean.Y)^2)
 	RSS = sum((Yield - Y_hat)^2)
 
