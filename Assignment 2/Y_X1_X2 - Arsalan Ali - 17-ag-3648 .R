@@ -112,11 +112,11 @@ MLR<- function( X1, X2, Y )
 
 	# Beta1's secret
 	V_Beta1 = MSE*((Sum_x2_square) / (Sum_x1_square_Sum_x2_square - Sum_x1x2_square))
-	SE_Beta1 = sqrt(V_Beta1)
+	SE_Beta1 = sqrt(V_Beta1+0i)
 
 	# Beta2's secret
 	V_Beta2 = MSE*((Sum_x1_square) / (Sum_x1_square_Sum_x2_square - Sum_x1x2_square))
-	SE_Beta2 = sqrt(V_Beta2)
+	SE_Beta2 = sqrt(V_Beta2+0i)
 
 	# Just some dudes needed for Beta0's top top secret...Ooooooo
 	mean.X1_square = mean.X1^2
@@ -125,7 +125,7 @@ MLR<- function( X1, X2, Y )
 
 	# Biggest secret of all from Beta0's side
 	V_Beta0 = MSE*((1 / n) + ((mean.X1_square*Sum_x2_square + mean.X2_square*Sum_x1_square - 2*mean.X1_mean.X2*(Sum_x1x2)) / (Sum_x1_square_Sum_x2_square - Sum_x1x2_square)))
-	SE_Beta0 = sqrt(V_Beta0)
+	SE_Beta0 = sqrt(V_Beta0+0i)
 
 	# These are all the Outputs that will appear in Console
 
