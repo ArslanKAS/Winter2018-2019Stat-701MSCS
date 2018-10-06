@@ -108,7 +108,7 @@ MLR<- function( X1, X2, Y )
 	R_square = MSS / TSS
 
 	# Mean Square Error coming through.....clear the wayyyyy
-	MSE = RSS / n - k
+	MSE = RSS / (n - k)
 
 	# Beta1's secret
 	V_Beta1 = MSE*((Sum_x2_square) / (Sum_x1_square_Sum_x2_square - Sum_x1x2_square))
